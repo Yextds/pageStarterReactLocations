@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "pages dev",
-    "build": "vite build && yext version",
+    "build": "cat dist/plugin/manifest.json && yext version && vite build",
     "fmt": "prettier -w .",
     "lint": "eslint .",
     "clean": "rm -rf .artifact-output .yext/ dist/ localData sites-rendered-output",
